@@ -18,11 +18,15 @@
       }
 
 h1 {
-  font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'TeXGyrePagella';
+  font-weight: 600;
 }
 
 body {
-  font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'TeXGyrePagella';
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 
@@ -37,12 +41,12 @@ h2, h3 {
 }
 
 h1 {
-    font-size: 250%;
+    font-size: 280%;
 }
 
 h2 {
     padding-top: 0.8em;
-    font-size: 160%;
+    font-size: 180%;
 }
 
 h2 + h3 {
@@ -50,8 +54,91 @@ h2 + h3 {
 }
 
 h3 {
-    font-size: 110%;
+    font-size: 125%;
     border-bottom: none;
+}
+
+/* Layout Width Adjustments */
+.wrapper {
+  width: 960px !important;
+  max-width: 90%;
+}
+
+header {
+  width: 240px !important;
+  text-align: center; /* Center align header content */
+  padding-right: 15px; /* Add spacing to prevent intersection */
+}
+
+/* Center the name and avatar */
+header h1 {
+  text-align: center !important;
+  margin-bottom: 15px;
+  width: 100%;
+  display: block;
+  font-size: 220% !important; /* Smaller than default 280% */
+}
+
+header .image.avatar {
+  text-align: center;
+  margin: 0 auto 20px auto;
+  display: block;
+  width: 100%;
+}
+
+header .image.avatar img {
+  margin: 0 auto !important;
+  display: block !important;
+  width: 75% !important;
+}
+
+header p {
+  text-align: center !important;
+}
+
+/* Center all header content */
+header h4 {
+  text-align: center;
+}
+
+header div {
+  text-align: center;
+}
+
+section {
+  width: 690px !important;
+  margin-left: 15px; /* Add margin to prevent intersection */
+}
+
+/* Responsive adjustments */
+@media print, screen and (max-width: 1024px) {
+  .wrapper {
+    width: auto !important;
+    max-width: 95%;
+  }
+
+  header {
+    width: auto !important;
+    padding-right: 0;
+    text-align: left; /* Reset alignment on mobile */
+  }
+
+  header h1 {
+    text-align: left;
+  }
+
+  header .image.avatar {
+    text-align: left;
+  }
+
+  header p {
+    text-align: left;
+  }
+
+  section {
+    width: auto !important;
+    margin-left: 0;
+  }
 }
 
 /* Footer */
