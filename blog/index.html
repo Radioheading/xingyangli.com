@@ -42,15 +42,7 @@
     <script>
         // Blog posts metadata - Add new posts here
         const blogPosts = [
-            {
-                id: 'neurips2025',
-                title: '[Diary] NeurIPS 游记 (12/01/2025-12/07/2025)',
-                date: '2025-12-09',
-                excerpt: 'My first experience attending NeurIPS conference in San Diego. Meeting pioneers in video generation, presenting Radial Attention, and reflections on AI research and academic community.',
-                tags: ['Conference', 'Travel', 'AI Research', 'Video Generation'],
-                file: 'source/neurips2025.md',
-                language: 'zh'
-            }
+            // TBD: Blog posts coming soon
             // Add more blog posts here in the future
         ];
 
@@ -91,6 +83,12 @@
         // Render blog posts
         async function renderBlogPosts() {
             const container = document.getElementById('blog-posts');
+
+            // Check if there are any posts
+            if (blogPosts.length === 0) {
+                container.innerHTML = '<div style="text-align: center; padding: 60px 20px; color: #666; font-size: 18px;">📝 Blog posts coming soon (TBD)</div>';
+                return;
+            }
 
             // Sort posts by date (newest first)
             const sortedPosts = blogPosts.sort((a, b) => new Date(b.date) - new Date(a.date));

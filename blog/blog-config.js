@@ -15,15 +15,7 @@ const blogConfig = {
 
     // Blog posts metadata
     blogPosts: [
-        {
-            id: 'neurips2025',
-            title: '[Diary] NeurIPS 游记 (12/01/2025-12/07/2025)',
-            date: '2025-12-07',
-            excerpt: 'My first experience attending NeurIPS conference in San Diego. Meeting pioneers in video generation, presenting Radial Attention, and reflections on AI research and academic community.',
-            tags: ['Conference', 'Travel', 'AI Research', 'Video Generation'],
-            file: 'neurips2025.md',
-            language: 'zh'
-        }
+        // TBD: Blog posts coming soon
         // Add more blog posts here
         // Example:
         // {
