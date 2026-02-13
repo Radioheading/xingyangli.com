@@ -26,10 +26,107 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
 
-    <!-- TeXGyrePagella font - exact same as zhijianliu.com -->
-    <link rel="stylesheet" href="stylesheets/texgyre-font.css">
-
     <link rel="stylesheet" href="stylesheets/special.css">
+    <style>
+      /* Match https://www.linji.me typography and spacing */
+      body {
+        font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        padding: 50px !important;
+      }
+
+      h1 {
+        font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 250% !important;
+      }
+
+      h2 {
+        font-size: 160% !important;
+      }
+
+      h3 {
+        font-size: 110% !important;
+      }
+
+      .wrapper {
+        width: 800px !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+      }
+
+      header {
+        width: 230px !important;
+        float: left !important;
+        position: fixed !important;
+        transform: translateX(-60px) !important;
+        padding-right: 0 !important;
+      }
+
+      section {
+        width: 600px !important;
+        float: right !important;
+        box-sizing: border-box !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+      }
+
+      @media print, screen and (max-width: 1100px) {
+        div.wrapper {
+          width: auto !important;
+          max-width: 760px !important;
+          margin: 0 auto !important;
+        }
+
+        header,
+        section,
+        footer {
+          float: none !important;
+          position: static !important;
+          width: 100% !important;
+          max-width: 760px !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        header {
+          transform: none !important;
+          padding-right: 0 !important;
+          text-align: center !important;
+          margin-bottom: 20px !important;
+        }
+
+        header h1,
+        header h4,
+        header p,
+        header div {
+          text-align: center !important;
+        }
+
+        header .image.avatar {
+          display: block !important;
+          margin: 0 auto 16px auto !important;
+        }
+
+        header .image.avatar img {
+          display: block !important;
+          width: 180px !important;
+          max-width: 55vw !important;
+          margin: 0 auto !important;
+        }
+
+        section {
+          padding-left: 0 !important;
+          margin: 0 !important;
+        }
+      }
+
+      @media print, screen and (max-width: 480px) {
+        body {
+          padding: 15px !important;
+        }
+      }
+    </style>
 
 
     <meta name="viewport" content="width=device-width">
@@ -46,7 +143,7 @@
         <br />
         <div align="center">
             <span class="image avatar" >
-    		  <img src="images/self_202512.jpg" ></img>
+    		  <img src="images/self-202509.jpg" ></img>
             </span>
         </div>
         <h1><b>Xingyang Li</b></h1>
@@ -56,7 +153,7 @@
             <a href="https://github.com/radioheading"><font color="#222"><i class="fa fa-github fa-lg"></i> </font></a> &nbsp
             <a href="mailto:brucelee_sjtu@sjtu.edu.cn"><font color="#222"><i class="fa fa-envelope fa-lg"></i> </font></a> &nbsp
             <a href="https://scholar.google.com/citations?user=BbEZr2gAAAAJ&hl=en"><font color="#222"><i class="fa fa-graduation-cap fa-lg"></i> </font></a> &nbsp
-            <a href="files/Xingyang_CV_20251209.pdf"><font color="#222" style="font-size: 18px; vertical-align: middle;"><b>[CV]</b></font></a>
+            <a href="files/Xingyang_CV_20260213.pdf"><font color="#222" style="font-size: 18px; vertical-align: middle;"><b>[CV]</b></font></a>
         </p>
         <br />
 
@@ -73,15 +170,10 @@
       <section class="outer">
       		<!-- About Me -->
       		<section  id="about">
-	    	    <h2>About Me</h2>
-
-                    <p>I am a senior undergraduate student at <a href="https://acm.sjtu.edu.cn">ACM Honors Class</a>, <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a> majoring in Computer Science.</p>
+	    	    <!-- <h2>About Me</h2> -->
+                    <p>I am a fourth-year undergraduate student at <a href="https://acm.sjtu.edu.cn">ACM Honors Class</a>, <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>. I work on efficient algorithms and systems for deep learning applications, particularly generative AI.</p>
 
 	    			<p>Now I am a visiting student at <a href="https://hanlab.mit.edu/">MIT HAN Lab</a> advised by Prof. <a href="https://songhan.mit.edu/">Song Han</a>. During my junior year, I am very fortunate to work with Prof. <a href="https://yufenguofr.github.io">Yu Feng</a> and Prof. <a href="https://dai.sjtu.edu.cn/pepledetail.html?id=218">Guohao Dai</a>.</p>
-
-                    <p>I am passionate about <b>efficient machine learning</b>, which involves designing algorithms, systems and hardware for machine learning applications. My long-term vision is to help build <b>efficient superintelligence</b>—models that stay compact, accessible, and reliably scalable to serve increasingly broad and demanding real-world needs.</p> 
-
-                    <p><b>In the future, I plan to pursue a Ph.D. in Computer Science, starting in Fall 2026.</b> If you are interested in my research, please feel free to contact me.</p>
 
                     <div style="background-color: #f8f9fa; border-left: 4px solid #0066cc; padding: 12px 16px; margin: 20px 0; border-radius: 4px;">
                         💡 Let's see our recent work: <a href="https://hanlab.mit.edu/blog/radial-attention" style="font-weight: bold; color: #0066cc; text-decoration: none;">[NeurIPS'25] Radial Attention</a>, featuring <i>O</i>(<i>n</i>log<i>n</i>) Sparse Attention for training/inference acceleration of video diffusion models! Feel free to try it with <a href="https://github.com/mit-han-lab/radial-attention" style="color: #0066cc; text-decoration: none;">the official implementation</a> or on the state-of-the-art <a href="https://github.com/kijai/ComfyUI-WanVideoWrapper" style="color: #0066cc; text-decoration: none;">WanVideo inference engine</a>.
@@ -94,12 +186,13 @@
                     <span id="news-toggle" style="cursor: pointer; font-size: 14px; color: #0055AA; margin-left: 10px;">[Show All]</span>
                 </h2>
                 <ul id="news-list">
+                    <li><b>[2025/11]</b> "<a href="https://arxiv.org/abs/2512.20495">Nebula: Enable City-Scale 3D Gaussian Splatting in Virtual Reality via Collaborative Rendering and Accelerated Stereo Rasterization</a>" is accepted to <b>ASPLOS'26</b> as an oral presentation.</li>
                     <li><b>[2025/10]</b> I gave a <a href="images/HarvardTalk.jpg">talk about sparse attention and quantization algorithms for diffusion models</a> at Harvard SEAS, hosted by Prof. <a href="https://junchengyang.com">Juncheng Yang</a>.</li>
                     <li><b>[2025/09]</b> "<a href="https://arxiv.org/abs/2506.19852">Radial Attention: <i>O</i>(<i>n</i>log<i>n</i>) Sparse Attention with Energy Decay for Long Video Generation</a>" is accepted to <b>NeurIPS'25</b>.</li>
                     <li><b>[2025/09]</b> I gave a <a href="images/UWTalk.jpg">talk about Radial Attention and Nunchaku</a> at UW Systems Lab, hosted by Prof. <a href="https://homes.cs.washington.edu/~baris/">Baris Kasikci</a>.</li>
                     <li><b>[2025/07]</b> I started my on-site research internship at <a href="https://hanlab.mit.edu/">MIT HAN Lab</a> in <a href="https://mit.edu/">MIT</a>. Feel free to reach out!</li>
-                    <li><b>[2025/07]</b> "<a href="https://arxiv.org/abs/2507.21499">SLTarch: Towards Scalable Point-Based Neural Rendering by Taming Workload Imbalance and Memory Irregularity</a>" is accepted to <b>ICCAD'25</b>.</li>
-                    <li><b>[2025/04]</b> "Our final paper of the course Computer Vision <a href="https://arxiv.org/abs/2501.15058">KETA: Kinematic-Phrases-Enhanced Text-to-Motion Generation via Fine-grained Alignment</a>" is accepted to <b>IJCNN'25</b>.</li>
+                    <li class="news-hidden" style="display: none;"><b>[2025/07]</b> "<a href="https://arxiv.org/abs/2507.21499">SLTarch: Towards Scalable Point-Based Neural Rendering by Taming Workload Imbalance and Memory Irregularity</a>" is accepted to <b>ICCAD'25</b>.</li>
+                    <li class="news-hidden" style="display: none;"><b>[2025/04]</b> "Our final paper of the course Computer Vision <a href="https://arxiv.org/abs/2501.15058">KETA: Kinematic-Phrases-Enhanced Text-to-Motion Generation via Fine-grained Alignment</a>" is accepted to <b>IJCNN'25</b>.</li>
                     <li class="news-hidden" style="display: none;"><b>[2025/02]</b> "<a href="https://dai.sjtu.edu.cn/my_file/pdf/64e0dc2d-66d6-46b6-9ea1-99c90e1cf293.pdf">Harnessing Conventional Video Processing Insights for Emerging 3D Video Generation Models: A Comprehensive Attention-aware Way</a>" is accepted to <b>DAC'25</b>.</li>
                     <li class="news-hidden" style="display: none;"><b>[2025/02]</b> I became the teaching assistant of the course <b>Machine Learning</b> (CS3308@SJTU, 2025 Spring), taught by Prof. Weinan Zhang.</li>
                     <li class="news-hidden" style="display: none;"><b>[2024/07]</b> Ended a wonderful period with SJTU Student Choir in <b>World Choir Games 2024</b> in Auckland, New Zealand. We earned <b>two gold medals</b> and one area championship!</li>
@@ -187,7 +280,7 @@
                                 <img src="images/nebula.png" width="93%" alt="Nebula">
                             </td>
                             <td width="70%" align="center">
-                                <div class="title">Nebula: Infinite-Scale 3D Gaussian Splatting in VR via Collaborative Rendering and Accelerated Stereo Rasterization</div>
+                                <div class="title">Nebula: Enable City-Scale 3D Gaussian Splatting in Virtual Reality via Collaborative Rendering and Accelerated Stereo Rasterization</div>
                                 <div class="authors">
                                   <span class="author">He Zhu</span>,
                                   <span class="author">Zheng Liu</span>,
@@ -200,7 +293,8 @@
                                   <span class="author">Yu Feng</span>
                                 </div>
                                 <div>
-                                    <span class="tag"><b>ASPLOS 2026 (<span style="color: red;">Oral Presentation</span>)</b></span>
+                                    <span class="tag"><b>ASPLOS 2026 (<span style="color: red;">Oral Presentation</span>)</b></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2512.20495">arXiv</a></span>
                                 </div>
                             </td>
                         </tr>
@@ -256,7 +350,7 @@
                                 </div>
                                 <div>
                                     <span class="tag"><b>DAC 2025 (<span style="color: red;">Oral Presentation</span>)</b></span> /
-                                    <span class="tag"><a href="https://dai.sjtu.edu.cn/my_file/pdf/64e0dc2d-66d6-46b6-9ea1-99c90e1cf293.pdf">PDF</a></span>
+                                    <span class="tag"><a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132992">paper</a></span>
                                 </div>
                             </td>
                         </tr>
@@ -274,19 +368,17 @@
                     <li>Teaching Assistant for <b>Mathematical Logic</b> (02/2024 – 06/2024)</li>
                     <li>Teaching Assistant for <b>Programming</b> (09/2023 – 02/2024)</li>
                 </ul>
-                <p>Role: giving lectures and recitation classes, writing documents and sample solutions, grading homework, creating exam questions, designing machine learning related final project lists</p>
+                <p>Role: giving lectures and recitation classes, writing documents and sample solutions, grading homework, creating exam questions, designing ML-related final project lists</p>
             </section>
 
             <!-- Honors -->
             <section  id="honors">
                 <h2>Honors & Awards</h2>
                 <ul>
-                    <li><b>2025</b> <b>Commercial Sponsorship Scholarship</b> (<b>Top 6</b> at Zhiyuan College, SJTU)</li>
                     <li><b>2025</b> <b>SenseTime Scholarship</b> (<b>30 winners nationwide</b> with aspiration in AI research)</li>
-                    <li><b>2024</b> <b>Commercial Sponsorship Scholarship</b> (<b>14 winners each year</b> in SJTU)</li>
-                    <li><b>2023</b> <b>Longfor Merit Scholarship</b> (<b>Top 10</b> at Zhiyuan College, SJTU)</li>
-                    <li><b>2022-2025</b> <b>Zhiyuan Honorary Scholarship</b> (<b>Top 2%</b> in SJTU)</li>
-                    <li><b>2023-2025</b> <b>Academic Excellence Scholarship</b> (Ranked top-5 each year in ACM Class of 2026)</li>
+                    <li><b>2022-2025</b> <b>Zhiyuan Honorary Scholarship</b></li>
+                    <li><b>2023-2025</b> <b>Academic Excellence Scholarship (Second Prize)</b></li>
+                    <li><b>2023-2025</b> <b>Commercial Sponsorship Scholarship (Second Prize)</b></li>
                 </ul>
             </section>
 
@@ -305,7 +397,7 @@
         <section id="footer">
 			<div class="container">
 				<ul class="copyright">
-					<li>&copy; Xingyang Li 2025</li>
+					<li>&copy; Xingyang Li 2026</li>
 				</ul>
 			</div>
 		</section>
