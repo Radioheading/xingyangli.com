@@ -1,5 +1,0 @@
-# Rule 1
-User-agent: *
-Disallow: /files/
-Disallow: /bkp/
-
