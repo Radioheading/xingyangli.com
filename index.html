@@ -1,10 +1,1229 @@
 <!doctype html>
 <html>
   <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106869316-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106869316-1');
+    </script>
+
+    <!-- Disable cache -->
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Xingyang Li's Homepage</title>
+
+    <link rel="icon" type="image/png" href="./images/ACMClass.png">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+    <link rel="stylesheet" href="stylesheets/special.css">
+    <style>
+      /* Match https://www.linji.me typography and spacing */
+      body {
+        font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        padding: 50px !important;
+      }
+
+      h1 {
+        font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 250% !important;
+      }
+
+      h2 {
+        font-size: 160% !important;
+      }
+
+      h3 {
+        font-size: 110% !important;
+      }
+
+      .wrapper {
+        width: 800px !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+      }
+
+      header {
+        width: 230px !important;
+        float: left !important;
+        position: fixed !important;
+        transform: translateX(-60px) !important;
+        padding-right: 0 !important;
+      }
+
+      section {
+        width: 600px !important;
+        float: right !important;
+        box-sizing: border-box !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+      }
+
+      @media print, screen and (max-width: 1100px) {
+        div.wrapper {
+          width: auto !important;
+          max-width: 760px !important;
+          margin: 0 auto !important;
+        }
+
+        header,
+        section,
+        footer {
+          float: none !important;
+          position: static !important;
+          width: 100% !important;
+          max-width: 760px !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        header {
+          transform: none !important;
+          padding-right: 0 !important;
+          text-align: center !important;
+          margin-bottom: 20px !important;
+        }
+
+        header h1,
+        header h4,
+        header p,
+        header div {
+          text-align: center !important;
+        }
+
+        header .image.avatar {
+          display: block !important;
+          margin: 0 auto 16px auto !important;
+        }
+
+        header .image.avatar img {
+          display: block !important;
+          width: 180px !important;
+          max-width: 55vw !important;
+          margin: 0 auto !important;
+        }
+
+        section {
+          padding-left: 0 !important;
+          margin: 0 !important;
+        }
+      }
+
+      @media print, screen and (max-width: 480px) {
+        body {
+          padding: 15px !important;
+        }
+      }
+    </style>
+
+
     <meta name="viewport" content="width=device-width">
-    <meta name="robots" content="noindex, nofollow">
-    <title></title>
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
   </head>
-  <body></body>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <br />
+        <div align="center">
+            <span class="image avatar" >
+    		  <img src="images/self-202509.jpg" ></img>
+            </span>
+        </div>
+        <h1><b>Xingyang Li</b></h1>
+
+        <p>
+            <a href="https://acm.sjtu.edu.cn/~xyli"><font color="#222"><i class="fa fa-home fa-lg"></i></font></a> &nbsp
+            <a href="https://github.com/radioheading"><font color="#222"><i class="fa fa-github fa-lg"></i> </font></a> &nbsp
+            <a href="mailto:brucelee_sjtu@sjtu.edu.cn"><font color="#222"><i class="fa fa-envelope fa-lg"></i> </font></a> &nbsp
+            <a href="https://scholar.google.com/citations?user=BbEZr2gAAAAJ&hl=en"><font color="#222"><i class="fa fa-graduation-cap fa-lg"></i> </font></a> &nbsp
+            <a href="files/xingyangli_CV.pdf"><font color="#222" style="font-size: 18px; vertical-align: middle;"><b>[CV]</b></font></a>
+        </p>
+        <br />
+
+        <h4>Contact:</h4>
+        <p>
+            <div><font face="courier">brucelee_sjtu (AT) sjtu (dot) edu (dot) cn </font> </div>
+            <div><font face="courier">xyli05 (AT) mit (dot) edu </font> </div>
+        </p>
+
+        
+      </header>
+
+
+      <section class="outer">
+      		<!-- About Me -->
+      		<section  id="about">
+	    	    <!-- <h2>About Me</h2> -->
+                    <p>I am a fourth-year undergraduate student at <a href="https://acm.sjtu.edu.cn">ACM Honors Class</a>, <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>. I work on efficient algorithms and systems for deep learning applications, particularly generative AI.</p>
+
+	    			<p>Now I am a visiting student at <a href="https://hanlab.mit.edu/">MIT HAN Lab</a> advised by Prof. <a href="https://songhan.mit.edu/">Song Han</a>. During my junior year, I am very fortunate to work with Prof. <a href="https://yufenguofr.github.io">Yu Feng</a> and Prof. <a href="https://dai.sjtu.edu.cn/pepledetail.html?id=218">Guohao Dai</a>.</p>
+
+				</section>
+
+            <!-- News -->
+            <section id="news">
+                <h2>News
+                    <span id="news-toggle" style="cursor: pointer; font-size: 14px; color: #0055AA; margin-left: 10px;">[Show All]</span>
+                </h2>
+                <ul id="news-list">
+                    <li><b>[2025/11]</b> "<a href="https://arxiv.org/abs/2512.20495">Nebula: Enable City-Scale 3D Gaussian Splatting in Virtual Reality via Collaborative Rendering and Accelerated Stereo Rasterization</a>" is accepted to <b>ASPLOS'26</b> as an oral presentation.</li>
+                    <li><b>[2025/10]</b> I gave a <a href="images/HarvardTalk.jpg">talk about sparse attention and quantization algorithms for diffusion models</a> at Harvard SEAS, hosted by Prof. <a href="https://junchengyang.com">Juncheng Yang</a>.</li>
+                    <li><b>[2025/09]</b> "<a href="https://arxiv.org/abs/2506.19852">Radial Attention: <i>O</i>(<i>n</i>log<i>n</i>) Sparse Attention with Energy Decay for Long Video Generation</a>" is accepted to <b>NeurIPS'25</b>.</li>
+                    <li><b>[2025/09]</b> I gave a <a href="images/UWTalk.jpg">talk about Radial Attention and Nunchaku</a> at UW Systems Lab, hosted by Prof. <a href="https://homes.cs.washington.edu/~baris/">Baris Kasikci</a>.</li>
+                    <li><b>[2025/07]</b> I started my on-site research internship at <a href="https://hanlab.mit.edu/">MIT HAN Lab</a> in <a href="https://mit.edu/">MIT</a>. Feel free to reach out!</li>
+                    <li class="news-hidden" style="display: none;"><b>[2025/07]</b> "<a href="https://arxiv.org/abs/2507.21499">SLTarch: Towards Scalable Point-Based Neural Rendering by Taming Workload Imbalance and Memory Irregularity</a>" is accepted to <b>ICCAD'25</b>.</li>
+                    <li class="news-hidden" style="display: none;"><b>[2025/04]</b> "Our final paper of the course Computer Vision <a href="https://arxiv.org/abs/2501.15058">KETA: Kinematic-Phrases-Enhanced Text-to-Motion Generation via Fine-grained Alignment</a>" is accepted to <b>IJCNN'25</b>.</li>
+                    <li class="news-hidden" style="display: none;"><b>[2025/02]</b> "<a href="https://dai.sjtu.edu.cn/my_file/pdf/64e0dc2d-66d6-46b6-9ea1-99c90e1cf293.pdf">Harnessing Conventional Video Processing Insights for Emerging 3D Video Generation Models: A Comprehensive Attention-aware Way</a>" is accepted to <b>DAC'25</b>.</li>
+                    <li class="news-hidden" style="display: none;"><b>[2025/02]</b> I became the teaching assistant of the course <b>Machine Learning</b> (CS3308@SJTU, 2025 Spring), taught by Prof. Weinan Zhang.</li>
+                    <li class="news-hidden" style="display: none;"><b>[2024/07]</b> Ended a wonderful period with SJTU Student Choir in <b>World Choir Games 2024</b> in Auckland, New Zealand. We earned <b>two gold medals</b> and one area championship!</li>
+                    <li class="news-hidden" style="display: none;"><b>[2024/02]</b> I became the teaching assistant of the course <b>Mathematical Logic</b> (CS2950@SJTU, 2024 Spring), taught by Prof. Qiang Yin.</li>
+                    <li class="news-hidden" style="display: none;"><b>[2023/09]</b> I became the teaching assistant of the course <b>Programming</b> (CS1953@SJTU, 2023 Fall).</li>
+                    <li class="news-hidden" style="display: none;"><b>[2022/08]</b> I was admitted to <b>ACM Honors Class</b>, Zhiyuan College, Shanghai Jiao Tong University.</li>
+                </ul>
+            </section>
+			
+			<!-- Education -->
+			<section  id="education">
+	            <h2>Education</h2>
+	            <div class="media">
+                    <table width="100%" align="center" border="0">
+                        <span class="pull-left"><img src="./images/mit.png" width="55px" height="55px"/></span>
+                        <div class="media-body">
+                            <div><span style="font-weight: bold">Massachusetts Institute of Technology</span>, USA </div>
+                            <div>Student Research Intern &bull; Jul. 2025 - Present </div>
+                            <div>Advisor: Prof. <a href="https://songhan.mit.edu/">Song Han</a></div>
+                        </div>
+                    </table>
+                    <br>
+                    <table width="100%" align="center" border="0">
+    	                <span class="pull-left"><img src="./images/sjtu.png" width="55px" height="55px"/></span>
+    	                <div class="media-body">
+    	                    <div><span style="font-weight: bold">Shanghai Jiao Tong University</span>, China </div>
+    	                    <div>B.Eng. in Computer Science &bull; Sept. 2022 - June 2026 (Expected)</div>
+                            <div>Member of ACM Honors Class (<b>Top 5%</b> students with interest in research)</div>
+                            <div>GPA: <b>4.03/4.3</b>, Rank: <b>3/30</b></div>
+                            <div>Advisor: Prof. <a href="https://apex.sjtu.edu.cn/members/yyu">Yong Yu</a></div>
+    	                </div>
+                    </table>
+	            </div>
+        	</section>
+			
+            <!-- Research -->
+            <section  id="research">
+	            <h2>Selected Publications</h2>
+                <p><i>* indicates equal contribution</i></p>
+
+                <br>  <!--some padding-->
+
+                <!-- FourTune -->
+                <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="30%" valign="top">
+                                <div class="paper-placeholder" aria-label="FourTune image placeholder">More to come</div>
+                            </td>
+                            <td width="70%" align="center">
+                                <div class="title">FourTune: Towards Fully 4-Bit Efficient Post-Training for Diffusion Models</div>
+                                <div class="authors">
+                                  <span class="author">Bowen Xue*</span>,
+                                  <span class="author">Zihan Min*</span>,
+                                  <span class="me">Xingyang Li*</span>,
+                                  <span class="author">Muyang Li</span>,
+                                  <span class="author">Yujun Lin</span>,
+                                  <span class="author">Zhekai Zhang</span>,
+                                  <span class="author">Haocheng Xi</span>,
+                                  <span class="author">Lvmin Zhang</span>,
+                                  <span class="author">Maneesh Agrawala</span>,
+                                  <span class="author">Jun-Yan Zhu</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>ICML 2026</b></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Quant VideoGen -->
+                <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="30%" valign="top">
+                                <a href="https://arxiv.org/abs/2602.02958" class="image"><img src="images/quant-videogen-fig4.png" width="93%" alt="Quant VideoGen Figure 4"></a>
+                            </td>
+                            <td width="70%" align="center">
+                                <div class="title">Quant VideoGen: Auto-Regressive Long Video Generation via 2-Bit KV-Cache Quantization</div>
+                                <div class="authors">
+                                  <span class="author">Haocheng Xi*</span>,
+                                  <span class="author">Shuo Yang*</span>,
+                                  <span class="author">Yilong Zhao</span>,
+                                  <span class="author">Muyang Li</span>,
+                                  <span class="author">Han Cai</span>,
+                                  <span class="me">Xingyang Li</span>,
+                                  <span class="author">Yujun Lin</span>,
+                                  <span class="author">Zhuoyang Zhang</span>,
+                                  <span class="author">Jintao Zhang</span>,
+                                  <span class="author">Xiuyu Li</span>,
+                                  <span class="author">Zhiying Xu</span>,
+                                  <span class="author">Jun Wu</span>,
+                                  <span class="author">Chenfeng Xu</span>,
+                                  <span class="author">Ion Stoica</span>,
+                                  <span class="author">Song Han</span>,
+                                  <span class="author">Kurt Keutzer</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>arXiv 2026</b></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2602.02958">arXiv</a></span> /
+                                    <span class="tag"><a href="https://svg-project.github.io/qvg">Website</a></span> /
+                                    <span class="tag"><a href="https://github.com/svg-project/Quant-VideoGen">Code</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- DeltaQuant -->
+                <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="30%" valign="top">
+                                <div class="paper-placeholder" aria-label="DeltaQuant image placeholder">More to come</div>
+                            </td>
+                            <td width="70%" align="center">
+                                <div class="title">DeltaQuant: 4-bit Video Diffusion Models with Spatiotemporal Delta Smoothing</div>
+                                <div class="authors">
+                                  <span class="me">Xingyang Li</span>,
+                                  <span class="author">Samuel Tesfai</span>,
+                                  <span class="author">Zhekai Zhang</span>,
+                                  <span class="author">Haocheng Xi</span>,
+                                  <span class="author">Shuo Yang</span>,
+                                  <span class="author">Lvmin Zhang</span>,
+                                  <span class="author">Yufei Sun</span>,
+                                  <span class="author">Kelly Peng</span>,
+                                  <span class="author">Maneesh Agrawala</span>,
+                                  <span class="author">Ion Stoica</span>,
+                                  <span class="author">Kurt Keutzer</span>,
+                                  <span class="author">Jun-Yan Zhu</span>,
+                                  <span class="author">Song Han</span>,
+                                  <span class="author">Yujun Lin</span>,
+                                  <span class="author">Muyang Li</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>CVPR 2026</b></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Radial Attention -->
+                <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="30%" valign="top">
+                                <a href="https://hanlab.mit.edu/projects/radial-attention" class="image"><img src="images/radial-attention.jpg" width="93%" alt="Radial Attention"></a>
+                            </td>
+                            <td width="70%" align="center">
+                                <div class="title">Radial Attention: <i>O</i>(<i>n</i>log<i>n</i>) Sparse Attention with Energy Decay for Long Video Generation</div>
+                                <div class="authors">
+                                  <span class="me">Xingyang Li*</span>,
+                                  <span class="author">Muyang Li*</span>,
+                                  <span class="author">Tianle Cai</span>,
+                                  <span class="author">Haocheng Xi</span>,
+                                  <span class="author">Shuo Yang</span>,
+                                  <span class="author">Yujun Lin</span>,
+                                  <span class="author">Lvmin Zhang</span>,
+                                  <span class="author">Songlin Yang</span>,
+                                  <span class="author">Jinbo Hu</span>,
+                                  <span class="author">Kelly Peng</span>,
+                                  <span class="author">Maneesh Agrawala</span>,
+                                  <span class="author">Ion Stoica</span>,
+                                  <span class="author">Kurt Keutzer</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>NeurIPS 2025</b></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2506.19852">arXiv</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/radial-attention">Code</a> <span style="color: red;">(500+ stars)</span></span> /
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/radial-attention">Website</a></span> /
+                                    <span class="tag"><a href="https://hanlab.mit.edu/blog/radial-attention">Blog</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- nebula -->
+                <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="30%" valign="top">
+                                <img src="images/nebula.png" width="93%" alt="Nebula">
+                            </td>
+                            <td width="70%" align="center">
+                                <div class="title">Nebula: Enable City-Scale 3D Gaussian Splatting in Virtual Reality via Collaborative Rendering and Accelerated Stereo Rasterization</div>
+                                <div class="authors">
+                                  <span class="author">He Zhu</span>,
+                                  <span class="author">Zheng Liu</span>,
+                                  <span class="me">Xingyang Li</span>,
+                                  <span class="author">Anbang Wu</span>,
+                                  <span class="author">Jieru Zhao</span>,
+                                  <span class="author">Fangxin Liu</span>,
+                                  <span class="author">Yiming Gan</span>,
+                                  <span class="author">Jingwen Leng</span>,
+                                  <span class="author">Yu Feng</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>ASPLOS 2026 (<span style="color: red;">Oral Presentation</span>)</b></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2512.20495">arXiv</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- SLTarch -->
+                <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="30%" valign="top">
+                                <a href="https://arxiv.org/abs/2507.21499" class="image"><img src="images/SLTarch_combined.png" width="93%" alt="SLTarch"></a>
+                            </td>
+                            <td width="70%" align="center">
+                                <div class="title">SLTarch: Towards Scalable Point-Based Neural Rendering by Taming Workload Imbalance and Memory Irregularity</div>
+                                <div class="authors">
+                                  <span class="me">Xingyang Li*</span>,
+                                  <span class="author">Jie Jiang*</span>,
+                                  <span class="author">Yu Feng</span>,
+                                  <span class="author">Yiming Gan</span>,
+                                  <span class="author">Jieru Zhao</span>,
+                                  <span class="author">Zihan Liu</span>,
+                                  <span class="author">Jingwen Leng</span>,
+                                  <span class="author">Minyi Guo</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>ICCAD 2025 (<span style="color: red;">Oral Presentation</span>)</b></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2507.21499">arXiv</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- DAC Paper -->
+                <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="30%" valign="top">
+                                <a href="https://dai.sjtu.edu.cn/my_file/pdf/64e0dc2d-66d6-46b6-9ea1-99c90e1cf293.pdf" class="image"><img src="images/harness.png" width="93%" alt="Harnessing Conventional Video Processing"></a>
+                            </td>
+                            <td width="70%" align="center">
+                                <div class="title">Harnessing Conventional Video Processing Insights for Emerging 3D Video Generation Models: A Comprehensive Attention-aware Way</div>
+                                <div class="authors">
+                                  <span class="author">Tianlang Zhao*</span>,
+                                  <span class="author">Jun Liu*</span>,
+                                  <span class="me">Xingyang Li*</span>,
+                                  <span class="author">Li Ding</span>,
+                                  <span class="author">Jinhao Li</span>,
+                                  <span class="author">Shuaiheng Li</span>,
+                                  <span class="author">Jinbo Hu</span>,
+                                  <span class="author">Guohao Dai</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>DAC 2025 (<span style="color: red;">Oral Presentation</span>)</b></span> /
+                                    <span class="tag"><a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132992">paper</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+
+            </section>
+
+            <!-- Academic Service -->
+            <section  id="work">
+                <h2>Teaching Experience</h2>
+                <ul>
+                    <li>Teaching Assistant for <b>Machine Learning</b> (02/2025 – 06/2025)</li>
+                    <li>Teaching Assistant for <b>Mathematical Logic</b> (02/2024 – 06/2024)</li>
+                    <li>Teaching Assistant for <b>Programming</b> (09/2023 – 02/2024)</li>
+                </ul>
+                <p>Role: giving lectures and recitation classes, writing documents and sample solutions, grading homework, creating exam questions, designing ML-related final project lists</p>
+            </section>
+
+            <!-- Honors -->
+            <section  id="honors">
+                <h2>Honors & Awards</h2>
+                <ul>
+                    <li><b>2025</b> <b>SJTU Merit Student</b> (<b>Top 2%</b> at SJTU)</li>
+                    <li><b>2025</b> <b>Commercial Sponsorship Scholarship</b> (<b>Top 6</b> at Zhiyuan College, SJTU)</li>
+                    <li><b>2025</b> <b>SenseTime Scholarship</b> (<b>30 winners nationwide</b> with aspiration in AI research)</li>
+                    <li><b>2024</b> <b>Commercial Sponsorship Scholarship</b> (<b>14 winners</b> each year in SJTU)</li>
+                    <li><b>2023</b> <b>Longfor Merit Scholarship</b> (<b>Top 10</b> at Zhiyuan College, SJTU)</li>
+                    <li><b>2022, 2023, 2024, 2025</b> <b>Zhiyuan Honorary Scholarship</b> (<b>Top 2%</b> in SJTU)</li>
+                    <li><b>2023, 2024, 2025</b> <b>Academic Excellence Scholarship</b></li>
+                </ul>
+            </section>
+
+            <!-- Miscellaneous -->
+            <section id="miscellaneous">
+                <h2>Miscellaneous</h2>
+                <ul>
+                    <li>Tenor in SJTU Student Choir, won first prize in <a href="images/xiangyang.jpg">National College Students' Art Performance</a> and two gold medals in <a href="images/aukland.jpg">World Choir Games 2024</a>, and a quite widespread Zhi-Yin-Ni-Tai-Mei variation on <a href="https://www.bilibili.com/video/BV1Dd4y1s73X/?spm_id_from=333.337.search-card.all.click">Bilibili</a>.</li>
+                    <li>Football enthusiast and team captain, led ACMClass2022 to <a href="images/2024ASF.jpg">win</a> department championship three times in a row.</li>
+                </ul>
+            </section>
+
+
+        </section>
+
+        <section id="footer">
+			<div class="container">
+				<ul class="copyright">
+					<li>&copy; Xingyang Li 2026</li>
+				</ul>
+			</div>
+		</section>
+    <script src="javascripts/scale.fix.js"></script>
+
+    <!-- News Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.getElementById('news-toggle');
+            const hiddenItems = document.querySelectorAll('.news-hidden');
+            let isExpanded = false;
+
+            toggle.addEventListener('click', function() {
+                if (isExpanded) {
+                    hiddenItems.forEach(item => item.style.display = 'none');
+                    toggle.textContent = '[Show All]';
+                    isExpanded = false;
+                } else {
+                    hiddenItems.forEach(item => item.style.display = 'list-item');
+                    toggle.textContent = '[Collapse]';
+                    isExpanded = true;
+                }
+            });
+        });
+    </script>
+  </body>
 </html>
+<!-- ALL CONTENT BELOW IS COMMENTED OUT (Ji Lin's old publications)
+
+                AWQ
+                <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/abs/2211.10438" class="image"><img src="images/awq.png" width="93%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin*</span>,
+                                  <span class="author">Jiaming Tang*</span>,
+                                  <span class="author">Haotian Tang</span>,
+                                  <span class="author">Shang Yang</span>,
+                                  <span class="author">Xingyu Dang</span>,
+                                  <span class="author">Song Han</span>,
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/abs/2306.00978"><b>MLSys 2024</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2306.00978">arXiv</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/llm-awq">Code</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/llm-awq/tree/main/tinychat">TinyChat🔥</a></span> 
+                                </div>
+                                <div>
+                                    <b>Integration</b>: 
+                                    <a href="https://github.com/NVIDIA/TensorRT-LLM#key-features">NVIDIA TRT-LLM</a> /
+                                    <a href="https://github.com/intel/neural-compressor/blob/master/neural_compressor/adaptor/torch_utils/awq.py">Intel Neural Compressor</a> /
+                                    <a href="https://github.com/vllm-project/vllm/blob/main/vllm/model_executor/quantization_utils/awq.py">vLLM</a> /
+                                    <a href="https://github.com/lm-sys/FastChat/blob/main/docs/awq.md">FastChat</a> /
+                                    <a href="https://github.com/huggingface/text-generation-inference/pull/1054">HuggingFace TGI</a> /
+                                    <a href=https://github.com/InternLM/lmdeploy>LMDeploy</a> /
+                                    <a href=https://friendli.ai/blog/Unlocking-Efficiency-of-Serving-LLMs-with-Activation-aware-Weight-Quantization-AWQ-on-PeriFlow/>FriendliAI</a>
+                                </div>
+                                <span class='highlight'><a href="https://mlsys.org/virtual/2024/awards_detail">Best Paper Award</a></span>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- SmoothQuant -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/abs/2211.10438" class="image"><img src="images/smoothquant.png" width="93%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models</div>
+                                <div class="authors">
+                                  <span class="author">Guangxuan Xiao*</span>,
+                                  <span class="me">Ji Lin*</span>,
+                                  <span class="author">Mickael Seznec</span>,
+                                  <span class="author">Julien Demouth</span>,
+                                  <span class="author">Song Han</span>,
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/abs/2211.02048"><b>ICML 2023</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2211.10438">arXiv</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/smoothquant">Code</a></span> /
+                                    <span class="tag"><a href="https://github.com/NVIDIA/FasterTransformer/blob/main/docs/gpt_guide.md#supported-features">Faster Transformer Integration</a></span> /
+                                    <span class="tag"><a href="https://github.com/intel/neural-compressor/blob/master/docs/source/smooth_quant.md">Intel Neural Compressor Integration</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- PokeEngine -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="" class="image"><img src="images/pokeengine.png" width="80%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">PockEngine: Sparse and Efficient Fine-tuning in a Pocket</div>
+                                <div class="authors">
+                                  <span class="author">Ligeng Zhu</span>,
+                                  <span class="author">Lanxiang Hu</span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Wei-Ming Chen</span>,
+                                  <span class="author">Wei-Chen Wang</span>,
+                                  <span class="author">Chuang Gan</span>,
+                                  <span class="author">Song Han</span>,
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/abs/2310.17752"><b>MICRO-56</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2310.17752">arXiv</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- SIGE -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/abs/2211.02048" class="image"><img src="images/sige.png" width="95%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">Efficient Spatially Sparse Inference for Conditional GANs and Diffusion Models</div>
+                                <div class="authors">
+                                  <span class="author">Muyang Li</span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Chenlin Meng</span>,
+                                  <span class="author">Stefano Ermon</span>,
+                                  <span class="author">Song Han</span>,
+                                  <span class="author">Jun-Yan Zhu</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/abs/2211.02048"><b>NeurIPS 2022</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/2211.02048">arXiv</a></span> /
+                                    <span class="tag"><a href="https://www.cs.cmu.edu/%7Esige/">Project Page</a></span> /
+                                    <span class="tag"><a href="https://github.com/lmxyy/sige">Code</a></span> /
+                                    <span class="tag"><a href="https://youtu.be/rDPotGoPPkQ">Video</a></span> 
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- 256kb -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/2206.15472.pdf" class="image"><img src="images/256kb.png" width="95%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">On-Device Training Under 256KB Memory</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin*</span>,
+                                  <span class="author">Ligeng Zhu*</span>,
+                                  <span class="author">Wei-Ming Chen</span>,
+                                  <span class="author">Wei-Chen Wang</span>,
+                                  <span class="author">Chuang Gan</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2206.15472.pdf"><b>NeurIPS 2022</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2206.15472.pdf">arXiv</a></span> /
+                                    <span class="tag"><a href="https://tinytraining.mit.edu">Project Page</a></span> 
+                                </div>
+                                <div>
+                                    <b>Press</b>:
+                                    <span class="tag"><a href="https://news.mit.edu/2022/machine-learning-edge-microcontroller-1004">MIT News</a> (<a href="https://web.mit.edu/spotlight/learning-edge/">homepage spotlight</a>)</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                NeAug -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/2110.08890.pdf" class="image"><img src="images/netaug.png" width="85%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">Network Augmentation for Tiny Deep Learning</div>
+                                <div class="authors">
+                                  <span class="author">Han Cai</span>,
+                                  <span class="author">Chuang Gan</span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2110.08890.pdf"><b>NeurIPS 2021</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2110.08890.pdf">arXiv</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/tinyml/tree/master/netaug">Code</a></span> 
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- MCUNetV2 -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/2110.15352.pdf" class="image"><img src="images/mcunetv2.gif" width="95%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">MCUNetV2: Memory-Efficient Patch-based Inference for Tiny Deep Learning</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Wei-Ming Chen</span>,
+                                  <span class="author">Han Cai</span>,
+                                  <span class="author">Chuang Gan</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2110.15352.pdf"><b>NeurIPS 2021</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2110.15352.pdf">arXiv</a></span> /
+                                    <span class="tag"><a href="https://mcunet.mit.edu/">Project Page</a></span> 
+                                </div>
+                                <div>
+                                    <b>Press</b>:
+                                    <span class="tag"><a href="https://news.mit.edu/2021/tiny-machine-learning-design-alleviates-bottleneck-memory-usage-iot-devices-1208">MIT News</a></span> / 
+                                    <span class="tag"><a href="https://bdtechtalks.com/2022/01/17/mcunetv2-tinyml-deep-learning-microcontrollers/">TechTalks</a></span> /
+                                    <span class="tag"><a href="https://thenextweb.com/news/tinyml-deep-learning-microcontrollers-syndication">TheNextWeb</a></span> /
+                                    <span class="tag"><a href="https://analyticsindiamag.com/solving-the-memory-bottleneck-problem-of-tinyml/">AIM</a></span> /
+                                    <span class="tag"><a href="https://techmonitor.ai/technology/ai-and-automation/tinyml-putting-ai-in-iot-chips-a-question-of-memory">TechMonitor</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- Anycost GAN -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/2103.03243.pdf" class="image"><img src="images/anycost_gan.jpg" width="95%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">Anycost GANs for Interactive Image Synthesis and Editing</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Richard Zhang</span>,
+                                  <span class="author">Frieder Ganz</span>,
+                                  <span class="author">Song Han</span>,
+                                  <span class="author">Jun-Yan Zhu</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2103.03243.pdf"><b>CVPR 2021</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2103.03243.pdf">arXiv</a></span> /
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/anycost-gan/">Project Page</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/anycost-gan">Code</a></span> /
+                                    <span class="tag"><a href="https://www.youtube.com/watch?v=_yEziPl9AkM">Video</a></span> /
+                                    <span class="tag"><a href="https://youtu.be/_yEziPl9AkM?t=90">Demo Video</a></span> /
+                                    <span class="tag"><a href="https://colab.research.google.com/github/mit-han-lab/anycost-gan/blob/master/notebooks/intro_colab.ipynb">Colab Tutorial</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                
+                MCUNet -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/2007.10319.pdf" class="image"><img src="images/mcunet.png" width="90%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">MCUNet: Tiny Deep Learning on IoT Devices</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Wei-Ming Chen</span>,
+                                  <span class="author">Yujun Lin</span>,
+                                  <span class="author">John Cohn</span>,
+                                  <span class="author">Chuang Gan</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>NeurIPS 2020</b></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2007.10319.pdf">arXiv</a></span> /
+                                    <span class="tag"><a href="https://mcunet.mit.edu">Project Page</a></span> /
+                                    <span class="tag"><a href="https://mcunet.mit.edu">Code</a></span> /
+                                    <span class="tag"><a href="https://www.youtube.com/watch?v=YvioBgtec4U&feature=youtu.be">Demo Video</a></span> 
+                                </div>
+                                <div>
+                                    <b>Press</b>:
+                                    <span class="tag"><a href="https://news.mit.edu/2020/iot-deep-learning-1113">MIT News</a> (<a href="http://web.mit.edu/archive/spotlight/deep-learning-tiny-places/">homepage spotlight</a>)</span> /
+                                    <span class="tag"><a href="https://www.wired.com/story/ai-algorithms-slimming-fit-fridge/">WIRED</a></span> /
+                                    <span class="tag"><a href="http://www.mittrchina.com/news/5866">MIT TR-China</a></span> /
+                                    <span class="tag"><a href="https://www.ibm.com/blogs/research/2020/12/ai-microcontrollers-smarter-iot/">IBM</a></span> /
+                                    <span class="tag"><a href="https://www.morningbrew.com/emerging-tech/stories/2020/12/07/researchers-figured-fit-ai-ever-onto-internet-things-microchips">Morning Brew</a></span> /
+                                    <span class="tag"><a href="https://staceyoniot.com/researchers-take-a-3-pronged-approach-to-edge-ai/">Stacey on IoT</a></span> /
+                                    <span class="tag"><a href="https://www.analyticsinsight.net/amalgamating-ml-and-iot-in-smart-home-devices/">Analytics Insight</a></span> /
+                                    <span class="tag"><a href="https://techable.jp/archives/142462">Techable</a></span> /
+                                    <span class="tag"><a href="https://tendencias21.levante-emv.com/el-aprendizaje-profundo-impulsa-el-internet-de-las-cosas.html">Tendencias</a></span>
+                                </div>
+                                <span class='highlight'>Spotlight Presentation</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section>  (commented out MCUNet) -->
+
+                <!-- DiffAug -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/2006.10738" class="image"><img src="images/diffaug.jpg" width="90%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">Differentiable Augmentation for Data-Efficient GAN Training</div>
+                                <div class="authors">
+                                  <span class="author">Shengyu Zhao</span>,
+                                  <span class="author">Zhijian Liu</span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Jun-Yan Zhu</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><b>NeurIPS 2020</b></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2006.10738">arXiv</a></span> /
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/data-efficient-gans/">Project Page</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/data-efficient-gans">Code</a></span> /
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/data-efficient-gans/slides.pdf">Slides</a></span> /
+                                    <span class="tag"><a href="https://colab.research.google.com/gist/zsyzzsoft/5fbb71b9bf9a3217576bebae5de46fc2/data-efficient-gans.ipynb">Colab Tutorial</a></span> 
+                                </div>
+                                <div>
+                                    <b>Press</b>:
+                                    <span class="tag"><a href="https://venturebeat.com/2020/06/24/mits-technique-trains-state-of-the-art-gans-with-less-data/">VentureBeat</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- GAN Compression -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/2003.08936.pdf" class="image"><img src="images/gan_compression.jpg" width="90%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">GAN Compression: Efficient Architectures for Interactive Conditional GANs</div>
+                                <div class="authors">
+                                  <span class="author">Muyang Li</span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Yaoyao Ding</span>,
+                                  <span class="author">Zhijian Liu</span>,
+                                  <span class="author">Jun-Yan Zhu</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs_CVPR_2020_paper.pdf"><b>CVPR 2020</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2003.08936.pdf">arXiv</a></span> /
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/gancompression/">Project Page</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/gan-compression">Code</a></span> /
+                                    <span class="tag"><a href="https://youtu.be/IwFLVQj10DA">Video</a></span> /
+                                    <span class="tag"><a href="https://www.youtube.com/playlist?list=PL80kAHvQbh-r5R8UmXhQK1ndqRvPNw_ex">Demo Video</a></span> /
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/gancompression/resources/546-slides.pdf">Slides</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- APQ -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/2006.08509.pdf" class="image"><img src="images/apq.png" width="85%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">APQ: Joint Search for Network Architecture, Pruning and Quantization Policy</div>
+                                <div class="authors">
+                                  <span class="author">Tianzhe Wang</span>,
+                                  <span class="author">Kuan Wang</span>,
+                                  <span class="author">Han Cai</span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author">Zhijian Liu</span>,
+                                  <span class="author">Hanrui Wang</span>,
+                                  <span class="author">Yujun Lin</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_APQ_Joint_Search_for_Network_Architecture_Pruning_and_Quantization_Policy_CVPR_2020_paper.pdf"><b>CVPR 2020</b></a></span>  /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2006.08509.pdf">arXiv</a></span> 
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </section> -->
+
+                <!-- Micro -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/8897011" class="image"><img src="images/automl_micro.png" width="85%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">AutoML for Architecting Efficient and Specialized Neural Networks</div>
+                                <div class="authors">
+                                  <span class="author">Han Cai*</span>,
+                                  <span class="me">Ji Lin*</span>,
+                                  <span class="author">Yujun Lin*</span>,
+                                  <span class="author">Zhijian Liu*</span>,
+                                  <span class="author">Kuan Wang*</span>,
+                                  <span class="author">Tianzhe Wang*</span>,
+                                  <span class="author">Ligeng Zhu*</span>,
+                                  <span class="author">Song Han</span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://ieeexplore.ieee.org/abstract/document/8897011"><b>IEEE Micro</b></a></span> 
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </section> -->
+
+                <!-- TSM -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/1811.08383.pdf" class="image"><img src="images/tsm.png" width="90%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">TSM: Temporal Shift Module for Efficient Video Understanding</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                                  <span class="author"><a href="http://songhan.mit.edu/">Song Han</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href=""><b>ICCV 2019</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/1811.08383.pdf">arXiv</a></span>
+                                </div>
+                                <div class="title">Training Kinetics in 15 Minutes: Large-scale Distributed Training on Videos</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                                  <span class="author"><a href="http://songhan.mit.edu/">Song Han</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="http://learningsys.org/neurips19/"><b>NeurIPS 2019 Workshop</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/1910.00932">arXiv</a></span> 
+                                    <br>
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/tsm/">Project Page</a></span> /
+                                    <span class="tag"><a href="https://www.youtube.com/watch?v=Pk8PHpdiSOo">Demo</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/temporal-shift-module">Code</a></span>
+                                </div>
+                                <div><b>Press</b>: 
+                                    <span class="tag"><a href="http://news.mit.edu/2019/faster-video-recognition-smartphone-era-1011">MIT News</a></span> /
+                                    <span class="tag"><a href="https://www.technologyreview.com/f/614551/ai-computer-vision-algorithms-on-your-phone-mit-ibm/">MIT Technology Review</a></span> /
+                                    <span class="tag"><a href="https://www.wired.com/story/technique-easier-ai-understand-videos/">WIRED</a></span> /
+                                    <span class="tag"><a href="https://www.engadget.com/2019/10/09/mit-ibm-machine-learning-faster-video-recognition/?guccounter=1&guce_referrer=aHR0cHM6Ly90LmNvL3hQSHBUMlJtdXc_YW1wPTE&guce_referrer_sig=AQAAAMPjElPjCfQqcJfbfckoSUJnh3OuqTR0KC_Z6S8-3h4ruHQ2z2RA5uiy_RQPVGmDJ8JghLtfI4XH0gIQr9-UlAQuA_4MJwfEEY9GMq6Tl8YolX6AVBlObRlvSMQ2M35zqGnzhp7-Av5dyfUUBxJQhH7Zo8Y_p9uOkhgU_FKl9oYB">Engadget</a></span>/
+                                    <span class="tag"><a href="https://news.developer.nvidia.com/new-mit-video-recognition-model-dramatically-improves-latency-on-edge-devices/?ncid=em-news-24390&mkt_tok=eyJpIjoiWm1JeU9UVTBNVGRpT1RVeCIsInQiOiJCVXIyUkhsdUFtcFBNY1NoTElpUytUOHJnMjdFN2pUTGY4UWpHMEZGQXNSRHRJUmxJMXpFa0FyOGF5Zk1US0NLMWZ1SU90anRiN3lCU0xGOWNNajdTazB4ajFVK2g4RnBxYXpiVFZLSWFKRzFkSURZZ0pGUVdodUYwek1vT2NSWiJ9#cid=dlz_em-news_en-us">NVIDIA News</a></span> /
+                                    <span class="tag"><a href="https://docs.nvidia.com/deeplearning/sdk/dali-developer-guide/docs/examples/use_cases/paddle/tsm/paddle-tsm.html">Industry Integration@NVIDIA</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- HAQ -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/pdf/1811.08886.pdf" class="image"><img src="images/haq.png" width="90%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">HAQ: Hardware-Aware Automated Quantization</div>
+                                <div class="authors">
+                                  <span class="author">Kuan Wang*</span>,
+                                  <span class="author"><a href="http://zhijianliu.com">Zhijian Liu*</a></span>,
+                                  <span class="author"><a href="https://synxlin.github.io">Yujun Lin*</a></span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author"><a href="http://songhan.mit.edu/">Song Han</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/abs/1811.08886"><b>CVPR 2019</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/pdf/1811.08886.pdf">arXiv</a></span> 
+                                </div>
+                                <span class='highlight'>Oral Presentation</span> -->
+
+                                <!-- <div class="title">Hardware-Centric AutoML for Mixed-Precision Quantization</div>
+                                <div class="authors">
+                                  <span class="author">Kuan Wang*</span>,
+                                  <span class="author"><a href="http://zhijianliu.com">Zhijian Liu*</a></span>,
+                                  <span class="author"><a href="https://synxlin.github.io">Yujun Lin*</a></span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author"><a href="http://songhan.mit.edu/">Song Han</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://arxiv.org/pdf/2008.04878.pdf"><b>IJCV</b></a></span> 
+                                    <br>
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/haq/">Project Page</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/HAQ">Code</a></span>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </section> -->
+
+                <!-- DQ -->
+                <!-- 
+                    <section class="pub">
+                        <table width="100%" align="center" border="0">
+                            <tr>
+                                <td width="25%" valign="top">
+                                    <a href="https://arxiv.org/abs/1904.08444" class="image"><img src="images/dq.png" width="90%" alt=""></a>
+                                </td>
+                                <td width="75%" align="center">
+                                    <div class="title">Defensive Quantization: When Efficiency Meets Robustness</div>
+                                    <div class="authors">
+                                      <span class="me">Ji Lin</span>,
+                                      <span class="author"><a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a></span>,
+                                      <span class="author"><a href="http://songhan.mit.edu/">Song Han</a></span>
+                                    </div>
+                                    <div>
+                                        <span class="tag"><b>ICLR 2019</b></span> /
+                                        <span class="tag"><a href="https://arxiv.org/abs/1904.08444">arXiv</a></span> / 
+                                        <span class="tag"><a href="http://news.mit.edu/2019/improving-security-ai-moves-to-smartphones-0423">MIT News</a></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                -->
+
+
+                <!-- AMC -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://arxiv.org/abs/1802.03494" class="image"><img src="images/amc.png" width="90%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">AMC: AutoML for Model Compression and Acceleration on Mobile Devices</div>
+                                <div class="authors">
+                                  <span class="author"><a href="http://yihui-he.github.io">Yihui He*</a></span>,
+                                  <span class="me">Ji Lin*</span>,
+                                  <span class="author"><a href="http://zhijianliu.com">Zhijian Liu</a></span>,
+                                  <span class="author"><a href="http://hwang.me/">Hanrui Wang</a></span>,
+                                  <span class="author"><a href="http://vision.stanford.edu/lijiali/">Li-Jia Li</a></span>,
+                                  <span class="author"><a href="http://songhan.mit.edu/">Song Han</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/amc/papers/amc_eccv.pdf"><b>ECCV 2018</b></a></span> /
+                                    <span class="tag"><a href="https://arxiv.org/abs/1802.03494">arXiv</a></span> /
+                                    <span class="tag"><a href="https://hanlab.mit.edu/projects/amc/">Project Page</a></span> /
+                                    <span class="tag"><a href="files/AMC_poster.pdf">Poster</a></span> /
+                                    <span class="tag"><a href="https://github.com/mit-han-lab/amc-release">Code</a></span>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </section>
+
+                AdaLR -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="20%" valign="top">
+                                <a href="images/adalr.png" class="image"><img src="images/adalr.png" width="90%" alt=""></a>
+                            </td>
+                            <td width="80%" align="center">
+                                <div class="title">Adaptive Mixture of Low-Rank Factorizations for Compact Neural Modeling</div>
+                                <div class="authors">
+                                  <span class="author"><a href="http://web.cs.ucla.edu/~tingchen/">Ting Chen*</a></span>,
+                                  <span class="me">Ji Lin*</span>,
+                                  <span class="author"><a href="https://www.linkedin.com/in/tianl">Tian Lin</a></span>,
+                                  <span class="author"><a href="http://songhan.mit.edu/">Song Han</a></span>,
+                                  <span class="author"><a href="https://chongw.github.io">Chong Wang</a></span>,
+                                  <span class="author"><a href="https://dennyzhou.github.io">Dengyong Zhou</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://openreview.net/pdf?id=B1eHgu-Fim"><b>NeurIPS 2018 Workshop</b></a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+
+                <!-- RNP -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <a href="https://papers.nips.cc/paper/6813-runtime-neural-pruning.pdf" class="image"><img src="images/rnp.png" width="80%" alt=""></a>
+                            </td>
+                            <td width="75%" align="center">
+                                <div class="title">Runtime Neural Pruning</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin*</span>,
+                                  <span class="author"><a href="https://raoyongming.github.io/">Yongming Rao*</a></span>,
+                                  <span class="author"><a href="https://sites.google.com/site/elujiwen/">Jiwen Lu</a></span>,
+                                  <span class="author"><a href="https://www.tsinghua.edu.cn/publish/auen/1713/2011/20110506105532098625469/20110506105532098625469_.html">Jie Zhou</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://papers.nips.cc/paper/6813-runtime-neural-pruning.pdf"><b>NIPS 2017</b></a></span>
+                                </div>
+                                <div class="title">Runtime Network Routing for Efficient Image Classification</div>
+                                <div class="authors">
+                                  <span class="author"><a href="https://raoyongming.github.io/">Yongming Rao</a></span>,
+                                  <span class="author"><a href="https://sites.google.com/site/elujiwen/">Jiwen Lu</a></span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author"><a href="https://www.tsinghua.edu.cn/publish/auen/1713/2011/20110506105532098625469/20110506105532098625469_.html">Jie Zhou</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="https://ieeexplore.ieee.org/abstract/document/8510920"><b>T-PAMI</b></a></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- facegan -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="20%" valign="top">
+                                <a href="images/facegan.png" class="image"><img src="images/facegan.png" width="80%" alt=""></a>
+                            </td>
+                            <td width="80%" align="center">
+                                <div class="title">Learning Discriminative Aggregation Network for Video-based Face Recognition</div>
+                                <div class="authors">
+                                  <span class="author"><a href="https://raoyongming.github.io/">Yongming Rao</a></span>,
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author"><a href="https://sites.google.com/site/elujiwen/">Jiwen Lu</a></span>,
+                                  <span class="author"><a href="https://www.tsinghua.edu.cn/publish/auen/1713/2011/20110506105532098625469/20110506105532098625469_.html">Jie Zhou</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Rao_Learning_Discriminative_Aggregation_ICCV_2017_paper.pdf"><b>ICCV 2017</b></a></span>
+                                </div>
+                                <span class='highlight'>Spotlight Presentation</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+                <!-- CADL -->
+                <!-- <section class="pub">
+                    <table width="100%" align="center" border="0">
+                        <tr>
+                            <td width="20%" valign="top">
+                                <a href="images/cadl.png" class="image"><img src="images/cadl.png" width="90%" alt=""></a>
+                            </td>
+                            <td width="80%" align="center">
+                                <div class="title">Consistent-aware Deep Learning for Person Re-identification in a Camera Network</div>
+                                <div class="authors">
+                                  <span class="me">Ji Lin</span>,
+                                  <span class="author"><a href="http://ivg.au.tsinghua.edu.cn/people/Liangliang_Ren/">Liangliang Ren</a></span>,
+                                  <span class="author"><a href="https://sites.google.com/site/elujiwen/">Jiwen Lu</a></span>,
+                                  <span class="author"><a href="http://ivg.au.tsinghua.edu.cn/~jfeng/">Jianjiang Feng</a></span>,
+                                  <span class="author"><a href="https://www.tsinghua.edu.cn/publish/auen/1713/2011/20110506105532098625469/20110506105532098625469_.html">Jie Zhou</a></span>
+                                </div>
+                                <div>
+                                    <span class="tag"><a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Lin_Consistent-Aware_Deep_Learning_CVPR_2017_paper.pdf"><b>CVPR 2017</b></a></span>
+                                </div>
+                                <span class='highlight'>Spotlight Presentation</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section> -->
+
+
+            
+            <!-- Work -->
+            <!-- <section  id="work">
+	            <h2>Industrial Experience</h2>
+	            <ul>
+                    <li><strong>Google AI China Center</strong> &bull; Feb - Sept, 2018
+                        <br> Advisor: <a href="https://songhan.mit.edu">Song Han</a> and <a href="http://vision.stanford.edu/lijiali/">Jia Li</a> 
+                         <br> AI Intern Researcher  
+                    </li>
+                    <br>
+
+	                <li><strong>SenseTime Group Limited</strong>  &bull; Jan - Apr, 2017
+	                    <br> Vision Researcher, Detection Team </br>
+                    </li>
+	            </ul>
+        	</section> -->
+
+            <!-- Talks -->
+            <!-- <section  id="talk">
+                <h2>Talks</h2>
+                <ul>
+                    <li>[02/2021]: MCUNet: Tiny Deep Learning on IoT Devices @ <a href="https://event.technologyreview.com/future-compute-2021">MIT Technology Review’s Future Compute 2021</a></li>
+                    <li>[12/2020]: MCUNet: Tiny Deep Learning on IoT Devices @ Tsinghua <a href="http://www.aitime.cn/">AI TIME</a></li>
+                </ul>
+            </section>
+ -->
+            <!-- Academic Service -->
+            <!-- <section  id="work">
+                <h2>Academic Service</h2>
+                <ul>
+                    <li>Conference reviewer: ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, SIGGRAPH, IJCAI, AAAI, ACMMM, etc.</li>
+                    <li>Journel reviewer: T-PAMI, JMLR, T-MM, etc.</li>
+                </ul>
+            </section> -->
